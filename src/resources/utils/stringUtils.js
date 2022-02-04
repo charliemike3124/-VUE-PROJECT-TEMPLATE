@@ -11,12 +11,13 @@ function generateRandomString(length) {
     return result.join("");
 }
 
-function addElipsisToText(text, maxLength){
+function addElipsisToText(text, maxLength) {
     let finalString = "";
     if (text) {
-        finalString = text.length < maxLength
-            ? text
-            : text.substring(0, maxLength) + "...";
+        finalString =
+            text.length < maxLength
+                ? text
+                : text.substring(0, maxLength) + "...";
     }
     return finalString;
 }

@@ -20,8 +20,7 @@ const actions = {
 };
 
 //-- Not Exported --//
-const storageKeys = {
-};
+const storageKeys = {};
 //-----------------//
 
 export default {

@@ -1,21 +1,17 @@
 <template>
-  <div>
-  </div>
+    <div></div>
 </template>
 
 <script>
+export default {
+    name: "Template",
 
-  export default {
-    name: 'Template',
+    data: () => ({}),
 
-    data: () => ({
-    }),
-
-    methods: {
-    }
-  }
+    methods: {},
+};
 </script>
 
 <style lang="less">
-  @import (less) "../styles/components/componentTemplate.less";
+@import (less) "../styles/components/componentTemplate.less";
 </style>

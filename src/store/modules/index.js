@@ -1,2 +1,2 @@
 import example from "./exampleModule";
-export { example};
+export { example };

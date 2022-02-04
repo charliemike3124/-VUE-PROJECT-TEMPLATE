@@ -1,22 +1,18 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 import VuexPersist from "vuex-persist";
-import {
-  example,
-} from "./modules";
-
+import { example } from "./modules";
 
 const vuexLocalStorage = new VuexPersist({
-  storage: window.localStorage,
-  reducer: (state) => ({
-  }),
+    storage: window.localStorage,
+    reducer: (state) => ({}),
 });
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-export default new Vuex.Store({  
-  plugins: [vuexLocalStorage.plugin],
-  modules: {
-    example
-  }
-})
+export default new Vuex.Store({
+    plugins: [vuexLocalStorage.plugin],
+    modules: {
+        example,
+    },
+});
