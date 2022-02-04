@@ -17,5 +17,5 @@
 </script>
 
 <style lang="less">
-
+  @import (less) "../styles/components/componentTemplate.less";
 </style>

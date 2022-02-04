@@ -1,9 +1,4 @@
-@spacer: 4px;
-
-:root{
-    --main-color: rgb(185, 115, 53);
-}
-
+//-- Commonly used
 .z-1{
     z-index: 1;
 }
@@ -14,16 +9,6 @@
 
 .p-rel{
     position: relative;
-}
-.of-hidden{
-    overflow: hidden;
-}
-.ofx-hidden{
-    overflow-x: hidden;
-}
-
-.ofy-hidden{
-    overflow-y: hidden;
 }
 
 .abs-center{
@@ -36,7 +21,8 @@
     height: 100% !important;
 }
 
-// Scrollbar
+//-- Scrollbar
+@spacer: 4px;
 @scrollbar-color: #a6a9ad;
 @scrollbar-size: @spacer * 1.75;
 @scrollbar-background-color: fade(@scrollbar-color, 25%);
@@ -58,3 +44,12 @@ border-radius: @scrollbar-size;
 background-color: @scrollbar-thumb-hover-background-color;
 border-radius: @scrollbar-size;
 }
+
+//-- Global Vuetify
+.v-input__slot {
+    min-height: 40px !important;
+    label {
+        top: 12px !important;
+    }
+}
+
