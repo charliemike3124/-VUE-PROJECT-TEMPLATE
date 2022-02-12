@@ -4,11 +4,14 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import AOS from "./plugins/AOS";
+import GeneralHelpers from "@/mixins/generalHelpers";
 
 import "./styles/baseStyles.less";
 import "aos/dist/aos.css";
 
 Vue.config.productionTip = false;
+
+Vue.mixin(GeneralHelpers);
 
 new Vue({
     router,
