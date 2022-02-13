@@ -1,4 +1,4 @@
-//-- Commonly used
+/* Commonly used global styles */
 .z-1 {
     z-index: 1;
 }
@@ -21,7 +21,7 @@
     height: 100% !important;
 }
 
-//-- Scrollbar
+/* Global Scrollbar styles - does not apply to mozilla */
 @spacer: 4px;
 @scrollbar-color: #a6a9ad;
 @scrollbar-size: @spacer * 1.75;
@@ -45,10 +45,12 @@
     border-radius: @scrollbar-size;
 }
 
-//-- Global Vuetify
-.v-input__slot {
-    min-height: 40px !important;
-    label {
-        top: 12px !important;
+/* Global Vuetify */
+.v-sm-input {
+    .v-input__slot {
+        min-height: 40px !important;
+        label {
+            top: 12px !important;
+        }
     }
 }
