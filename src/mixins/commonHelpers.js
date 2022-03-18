@@ -23,5 +23,17 @@ export default {
             //-- Does not work if the object is or contains classes.
             return JSON.parse(JSON.stringify(object));
         },
+        /*Resolves when the image finishes loading.*/
+        preLoadImage(src) {
+            return new Promise((resolve, reject) => {
+                try {
+                    const img = new Image();
+                    img.src = src;
+                    img.onload = () => resolve();
+                } catch (ex) {
+                    reject(ex);
+                }
+            });
+        },
     },
 };
