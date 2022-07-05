@@ -1,3 +1,3 @@
 export default {
-    EXAMPLE_CONSTANT: "EXAMPLE",
+  EXAMPLE_CONSTANT: "EXAMPLE",
 };

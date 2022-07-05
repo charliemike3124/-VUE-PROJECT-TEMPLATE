@@ -1,14 +1,14 @@
 <template>
-    <div></div>
+  <div></div>
 </template>
 
 <script>
 export default {
-    name: "Template",
+  name: "Template",
 
-    data: () => ({}),
+  data: () => ({}),
 
-    methods: {},
+  methods: {},
 };
 </script>
 

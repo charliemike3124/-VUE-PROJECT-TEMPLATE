@@ -4,6 +4,6 @@ import Vue from "vue";
 Vue.use(AOS);
 
 export default new AOS.init({
-    disable: "phone",
-    duration: 1200,
+  disable: "phone",
+  duration: 1200,
 });
